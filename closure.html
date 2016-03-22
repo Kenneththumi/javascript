@@ -1,0 +1,31 @@
+<!-- **
+ * Cytonn Technologies
+ * @author Kenneth Thumi<kthumi.cytonn.com>
+ *
+ *
+ -->
+ <html>
+<head>
+    <title>Closure</title>
+</head>
+<body>
+    <button onClick="math()">Closure</button>
+    <p id="Closure">0</p>
+    <script type="text/javascript">
+    /* function declaration  */
+        var addition=(function() {
+                 /* closure variable declared inside the function*/
+                 var x = 0;
+                 //function to be used to display variable out of scope
+                 return function(){
+                 	return x +=1;
+                 }
+                 
+        	})();
+        function math(){
+         document.getElementById("Closure").innerHTML=addition();
+        } 
+        </script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- **
+ * Cytonn Technologies
+ * @author Kenneth Thumi<kthumi.cytonn.com>
+ *
+ *
+ -->
+<html>
+<body>
+...
+<script>
+   (function() { 
+      var x = '';
+
+      function myFunction () {
+         alert('Hello: ' + x);
+      }
+
+      x = 'Bob';
+      myFunction();
+
+      alert(typeof x);            // string
+      alert(typeof myFunction);   // function
+   })();
+
+   alert(typeof x);               // undefined
+   alert(typeof myFunction);      // undefined
+</script>
+</body>
+</html>

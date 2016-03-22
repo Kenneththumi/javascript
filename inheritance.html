@@ -1,0 +1,30 @@
+<!-- **
+ * Cytonn Technologies
+ * @author Kenneth Thumi<kthumi.cytonn.com>
+ *
+ *
+ -->
+<html>
+<head>
+    <title>Inheritance</title>
+</head>
+<body>
+    <script type="text/javascript">
+         var Employee=function(name){
+              this.name=name;
+         }
+         Employee.prototype.getname = function() {
+               return this.name;
+         }
+         var PermanentEmployee =function(annualSalary){
+                 this.annualSalary=annualSalary;
+         }
+         //create an object
+         var employee=new Employee("Mangotto");
+         PermanentEmployee.prototype=employee;
+         var PE=new PermanentEmployee();
+         document.write(PE.getname()) ;
+         document.write(PE.annualSalary) ;
+    </script>
+</body>
+</html>
