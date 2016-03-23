@@ -1,0 +1,28 @@
+/*
+**
+ * Cytonn Technologies
+ * @author Kenneth Thumi<kthumi.cytonn.com>
+ *
+ *
+*/
+#div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    padding: 30px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+#p {
+    background-color: white;
+}
+.container{
+	margin: 40px auto;
+	border-radius: 2px;
+	width: 400px;
+	height: auto;
+
+}

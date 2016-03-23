@@ -1,0 +1,66 @@
+<!-- **
+ * Cytonn Technologies
+ * @author Kenneth Thumi<kthumi.cytonn.com>
+ *
+ *
+ -->
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		    <meta charset="utf-8">
+            <title>Inbuilt JS functions</title>
+         <link rel="stylesheet" type="text/css" href="css.css">
+		</head>
+		<body>
+		  <div class="container">
+		  	<h3>onclick</h3>
+            <p>Click to display date</p>
+
+            <button onclick="displayDate()">Today is?</button>
+
+            <script>
+            function displayDate() {
+            	 d=new Date();
+                document.getElementById("show").innerHTML = d.toDateString();
+
+            }
+            
+            </script>
+
+            <p id="show"></p>
+         <hr/>
+            <!-- onmouseover demonstration -->
+            <h3>onmousemove, onmouseenter and onmouseover.</h3>
+
+            <div id="div" onmousemove="myMoveFunction()">
+              <p id="p">onmousemove: <br> <span id="demo">Mouse over me!</span></p>
+            </div>
+
+            <div id="div" onmouseenter="myEnterFunction()">
+              <p id="p">onmouseenter: <br> <span id="demo2">Mouse over me!</span></p>
+            </div>
+
+            <div id="div" onmouseover="myOverFunction()">
+              <p id="p">onmouseover: <br> <span id="demo3">Mouse over me!</span></p>
+            </div>
+
+            <script>
+            var x = 0;
+            var y = 0;
+            var z = 0;
+
+            function myMoveFunction() {
+                document.getElementById("demo").innerHTML = z+=1;
+            }
+
+            function myEnterFunction() {
+                document.getElementById("demo2").innerHTML = x+=1;
+            }
+
+            function myOverFunction() {
+                document.getElementById("demo3").innerHTML = y+=1;
+            }
+            </script>
+         </div>
+		</body>
+</html>
